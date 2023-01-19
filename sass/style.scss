@@ -1,3 +1,21 @@
+@mixin descr {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+@mixin subtit {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #000000;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -67,6 +85,7 @@ body {
         padding-left: 50px;
     }
     .design-section-main-title {
+        padding-top: 100px;
         font-family: 'Roboto';
         padding-right: 8rem;
         font-style: normal;
@@ -90,12 +109,7 @@ body {
                 padding-top: 20px;
                 width: 540px;
                 height: 67px;
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 26px;
-                color: #727272;
+                @include descr;
                 padding-bottom: 5rem;
             }
             .design-section-main-btn {
@@ -116,3 +130,26 @@ body {
         }
     }
 }
+// -----------ABOUTME__SECTION----------------
+.aboutme {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 119px;
+}
+
+.aboutme-content {
+    max-width: 540px;
+    height: auto;
+    .aboutme-title {
+       @include subtit;
+        
+    }
+    .aboutme-descr {
+        padding-top: 50px;
+        @include descr;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+}
+
