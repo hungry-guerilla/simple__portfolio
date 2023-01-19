@@ -5,6 +5,11 @@
           box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-size: 16px;
   font-family: "Revalia";
@@ -179,4 +184,128 @@ body {
   color: #727272;
   text-align: center;
   padding-bottom: 100px;
+}
+
+.myworks {
+  background: #34547A;
+  padding: 100px 320px;
+}
+
+.myworks-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.myworks-content .myworks-content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 141px;
+  height: 50px;
+}
+.myworks-content .myworks-content-block i {
+  font-size: 3.2rem;
+  color: #fff;
+  padding-right: 20px;
+}
+.myworks-content .myworks-content-block .myworks-content-block-txt {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.skills-section {
+  background-color: #fff;
+}
+.skills-section .skills-bar-item {
+  width: 270%;
+  height: 10px;
+  background-color: rgb(178, 178, 178);
+}
+.skills-section .skills-bar-item .skills-bar-item-name {
+  text-align: right;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  color: white;
+}
+.skills-section .skills-bar-item .adobe {
+  width: 50%;
+  height: 1px;
+  background-color: rgb(176, 28, 28);
+}
+.skills-section .skills-bar-item .scss {
+  width: 90%;
+  height: 1px;
+  background-color: greenyellow;
+}
+.skills-section .skills-bar-item .git {
+  width: 60%;
+  background-color: #34547A;
+}
+
+.skills-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.skills-txt .skills-txt-title {
+  padding-bottom: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #000000;
+}
+.skills-txt .skills-bar p {
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+.skills-txt .skills-bar p::first-child {
+  padding-top: 0px;
+}
+
+.skills {
+  padding: 102px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.skills .skills-img {
+  max-width: 555px;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */

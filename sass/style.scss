@@ -22,6 +22,11 @@
     box-sizing: border-box;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-size: 16px;
     font-family: 'Revalia';
@@ -153,3 +158,97 @@ body {
     }
 }
 
+// -----------WORK__SECTION----------------
+.myworks {
+    background: #34547A;
+    padding: 100px 320px;
+}
+.myworks-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    .myworks-content-block {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        max-width: 141px;
+        height: 50px;
+        i {
+            font-size: 3.2rem;
+            color: #fff;
+            padding-right: 20px;
+        }
+        .myworks-content-block-txt {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            
+            color: #FFFFFF;
+        }
+    }
+}
+// -----------SKILLS__SECTION----------------
+.skills-section {
+    background-color: #fff;
+    .skills-bar-item {
+        width: 270%;
+        height: 10px;
+        background-color: rgb(178, 178, 178);
+        .skills-bar-item-name {
+            text-align: right;
+            padding-top: 0px;
+            padding-bottom: 10px;
+            color: white;
+        }
+        .adobe {
+            width: 50%;
+            height: 1px;
+            background-color: rgb(176, 28, 28);
+        }
+        .scss {
+            width: 90%;
+            height: 1px;
+            background-color: greenyellow;
+        }
+        .git {
+            width: 60%;
+            background-color:#34547A;
+        }
+    }
+}
+
+.skills-txt {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    .skills-txt-title {
+        padding-bottom: 40px;
+        @include subtit;
+    }
+    .skills-bar {
+        p {
+            padding-bottom: 20px;
+            padding-top: 30px;
+            &::first-child {
+                padding-top: 0px;
+            }
+        }
+    }
+
+}
+
+.skills {
+    padding: 102px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    .skills-img {
+        max-width: 555px;
+        height: auto;
+    }
+}
