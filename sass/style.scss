@@ -6,6 +6,20 @@
     line-height: 26px;
     color: #727272;
 }
+@mixin btn {
+    width: 225px;
+    height: 65px;
+    background: #34547A;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 23px 40px 20px 40px;
+}
 @mixin subtit {
     font-family: 'Roboto';
     font-style: normal;
@@ -251,4 +265,103 @@ body {
         max-width: 555px;
         height: auto;
     }
+}
+
+// -----------STYLE__SECTION----------------
+
+.style {
+    background: #EEEFF1;
+    padding-bottom: 100px;
+}
+.content {
+}
+.style-content {
+}
+.style-title {
+    padding-top: 100px;
+    @include subtit;
+}
+.style-descr {
+    padding-top: 50px;
+    @include descr;
+    margin: 0 auto;
+    max-width: 540px;
+    text-align: center;
+    padding-bottom: 57px;
+}
+
+.style-video {
+    max-width: 1110px;
+    height: 600px;
+    
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(photo-1514070706115-47c142769603.jpg);
+}
+
+// -----------PROJECT__SECTION----------------
+
+.projects {
+    width: 100vw;
+    height: 800px;
+    background: url('/img/projects.svg') no-repeat top center;
+}
+
+// -----------FORM__SECTION----------------
+.form {
+    background: #EEEFF1;
+    padding-bottom: 150px;
+}
+.form-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.form-content-form {
+    padding-left: 10px;
+    max-width: 540px;
+    max-height: 247px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #5F5D5D;
+    input {
+        width: 255px;
+        height: 50px;
+        background: #FFFFFF;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+        padding: 10px;
+        color: #5F5D5D;
+        border: none;
+        &:focus {
+            background: #fff;
+            box-shadow: 0;
+            border: 3px solid #3498db;
+            color: #3498db;
+            outline: none;
+        }
+    }
+    .name {
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    textarea {
+        border: none;
+        width: 520px;
+        height: 175px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        color: #5F5D5D;
+    }
+}
+
+.form-actions {
+    padding-top: 70px;
+}
+.form-content-btn {
+    @include btn;
 }
