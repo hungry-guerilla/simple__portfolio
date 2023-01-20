@@ -408,9 +408,9 @@ body {
   color: #3498db;
   outline: none;
 }
-.form-content-form .name {
-  margin-bottom: 10px;
-  margin-right: 10px;
+.form-content-form .your-name {
+  padding-bottom: 10px;
+  padding-right: 10px;
 }
 .form-content-form textarea {
   border: none;
