@@ -1,3 +1,38 @@
+@media only screen and (max-width: 1173px) {
+  .design-section-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .design-section-content .design-section-main {
+    text-align: center;
+  }
+  .design-section-content .design-section-content-img {
+    margin: 0 auto;
+  }
+  .myworks-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .skills {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .skills .skills-img {
+    max-width: 1%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +40,15 @@
           box-sizing: border-box;
   -webkit-transition: 0.4s all;
   transition: 0.4s all;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,6 +59,8 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-size: 16px;
   font-family: "Revalia";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .content {
@@ -75,23 +121,12 @@ body {
 }
 
 .design-section {
+  padding-top: 100px;
   padding-bottom: 198px;
   background-color: #EEEFF1;
 }
-.design-section img {
-  padding-top: 120px;
-  padding-right: 180px;
-  padding-left: 50px;
-}
-.design-section .design-section-main-title {
-  padding-top: 100px;
-  font-family: "Roboto";
-  padding-right: 8rem;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 79px;
-  color: #000000;
+.design-section .design-section-content-img img {
+  display: inline;
 }
 .design-section .design-section-content {
   display: -webkit-box;
@@ -105,35 +140,31 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .design-section .design-section-content .design-section-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  padding-left: 20%;
+}
+.design-section .design-section-content .design-section-main .design-section-main-title {
+  font-family: "Revalia";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 79px;
+  color: #000000;
 }
 .design-section .design-section-content .design-section-main .design-section-main-descr {
   padding-top: 20px;
-  width: 540px;
-  height: 67px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   color: #727272;
-  padding-bottom: 5rem;
+  padding-bottom: 25%;
 }
 .design-section .design-section-content .design-section-main .design-section-main-btn {
   width: 225px;
@@ -195,11 +226,13 @@ body {
 }
 
 .myworks {
+  max-width: 100%;
   background: #34547A;
   padding: 100px 320px;
 }
 
 .myworks-content {
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,8 +249,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-align: center;
@@ -314,7 +345,8 @@ body {
       align-content: center;
 }
 .skills .skills-img {
-  max-width: 555px;
+  display: none;
+  max-width: 100%;
   height: auto;
 }
 
