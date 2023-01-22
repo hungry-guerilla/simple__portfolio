@@ -1,6 +1,5 @@
 @media only screen and (max-width: 1173px ){
     .design-section-content {
-        display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
@@ -17,9 +16,28 @@
         flex-wrap: wrap;
     }
    .skills {
-        flex-wrap: wrap;
+    flex-wrap: wrap;
         .skills-img {
-            max-width: 1%;
+            max-width: 100%;
         }
    }
+}
+
+@media only screen and (max-width: 800px){
+    .skills {
+        flex-wrap: wrap;
+        img {
+            padding-top: 50px;
+        }
+    }
+    .myworks-content {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .skills-txt {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
 }

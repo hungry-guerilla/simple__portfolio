@@ -11,11 +11,11 @@ html, body {
     margin: 0;
     padding: 0;
 }
-html {
-    // overflow-x:hidden;
-}
+// html {
+//     // overflow-x:hidden;
+// }
 section {
-    margin: 0;
+    margin: 0 auto;
 }
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
@@ -26,6 +26,7 @@ body {
     font-size: 16px;
     font-family: 'Revalia';
     box-sizing: border-box;
+    min-height: 1200px;
 }
 
 .content {
@@ -33,6 +34,9 @@ body {
     margin: 0 auto;
 }
 
+section {
+    max-width: 100%;
+}
 .header__section {
     background: #EEEFF1;
 }
@@ -75,17 +79,28 @@ body {
 
 }
 
+@media only screen and (max-width: 700px) {
+    li {
+        display: none;
+    }
+    .header-logo {
+        margin: 0 auto;
+    }
+}
+
 
 // -----------DESIGN__SECTION----------------
 .design-section {
+    // display: none;
     padding-top: 100px;
     padding-bottom: 198px;
     background-color: #EEEFF1;
 
     .design-section-content-img {
         // display: none;
+        max-width: 100%;
         img {
-            display: inline;
+            max-width: 300px;
         }
     }
     .design-section-content {
@@ -93,10 +108,9 @@ body {
             justify-content: space-between;
             align-content: center;
             align-items: center;
-            flex-direction: row;
         .design-section-main {
             // display: none;
-            padding-left: 20%;
+            text-align: center;
             .design-section-main-title {
                 font-family: 'Revalia';
                 font-style: normal;
@@ -106,9 +120,10 @@ body {
                 color: #000000;
             }
             .design-section-main-descr {
-                padding-top: 20px;
+                max-width: 500px;
+                padding-top: 50px;
                 @include descr;
-                padding-bottom: 25%;
+                padding-bottom: 70px;
             }
             .design-section-main-btn {
                 @include btn;
@@ -142,9 +157,10 @@ body {
 
 // -----------WORK__SECTION----------------
 .myworks {
+    // display: none;
     max-width: 100%;
     background: #34547A;
-    padding: 100px 320px;
+    padding: 100px 0;
 }
 .myworks-content {
     max-width: 100%;
@@ -176,10 +192,9 @@ body {
 }
 // -----------SKILLS__SECTION----------------
 .skills-section {
+    max-width: 100%;
     background-color: #fff;
     .skills-bar-item {
-        width: 270%;
-        height: 10px;
         background-color: rgb(178, 178, 178);
         .skills-bar-item-name {
             text-align: right;
@@ -188,27 +203,33 @@ body {
             color: white;
         }
         .adobe {
-            width: 50%;
+            max-width: 50%;
             height: 1px;
             background-color: rgb(176, 28, 28);
         }
         .scss {
-            width: 90%;
+            max-width: 90%;
             height: 1px;
             background-color: greenyellow;
         }
         .git {
-            width: 60%;
+            max-width: 60%;
             background-color:#34547A;
         }
     }
 }
 
 .skills-txt {
+    padding-top: 50px;
+    max-width: 100%;
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
+justify-content: space-between;
+    .bar {
+        width: 40%;
+    }
     .skills-txt-title {
+        text-align: center;
         padding-bottom: 40px;
         @include subtit;
     }
@@ -230,13 +251,31 @@ body {
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    flex-direction: column;
     .skills-img {
-        display: none;
-        max-width: 100%;
+        // display: none;
+        max-width: 50%;
         height: auto;
     }
 }
-
+@media only screen and (max-width: 800px){
+    .skills {
+        flex-wrap: wrap;
+        img {
+            padding-top: 50px;
+        }
+    }
+    .myworks-content {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .skills-txt {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+}
 // -----------STYLE__SECTION----------------
 
 .style {
@@ -273,6 +312,7 @@ body {
 
 // -----------FORM__SECTION----------------
 .form {
+    display: none;
     background: #EEEFF1;
     padding-bottom: 150px;
 }
